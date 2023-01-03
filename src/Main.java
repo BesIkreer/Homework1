@@ -31,10 +31,10 @@ public class Main {
        if (institution2) {
            System.out.println("Если возраст человека равен " + age1 + ", то ему нужно ходить в школу.");
        }
-       else if (institution3) {
+       if (institution3) {
             System.out.println("Если возраст человека равен " + age1 + ", то ему нужно ходить в университет.");
         }
-       else if (institution4) {
+       if (institution4) {
             System.out.println("Если возраст человека равен " + age1 + ", то ему нужно ходить на работу.");
         }
 
@@ -47,10 +47,10 @@ public class Main {
         if (limitation1) {
             System.out.println("Если возраст ребенка равен " + age2 + ", то ему нельзя кататься на аттракционе.");
         }
-        else if (limitation2) {
+        if (limitation2) {
             System.out.println("Если возраст ребенка равен " + age2 + ", то ему нужно кататься на аттракционе в сопровождении.");
         }
-        else if (limitation3) {
+        if (limitation3) {
             System.out.println("Если возраст ребенка равен " + age2 + ", то ему можно кататься на аттракционе без сопровождения.");
         }
 
@@ -62,10 +62,10 @@ public class Main {
         if (slot1) {
             System.out.println("Вы пассажир №" + passenger + " для вас есть сидячие места." );
         }
-        else if (slot2) {
+        if (slot2) {
             System.out.println("Вы пассажир №" + passenger + " для вас есть места стоя." );
         }
-        else if (slot3) {
+        if (slot3) {
             System.out.println("Вы пассажир №" + passenger + " для вас нет мест." );
         }
 
@@ -80,10 +80,10 @@ public class Main {
         if (maxOne) {
             System.out.println("Самое большое число из введеных - " + one);
         }
-        else if (maxTwo) {
+        if (maxTwo) {
             System.out.println("Самое большое число из введеных - " + two);
         }
-        else if (maxThree) {
+        if (maxThree) {
             System.out.println("Самое большое число из введеных - " + three);
         }
 
