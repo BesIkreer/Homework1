@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Задача №1");
         int summa = 0;
         int h = 0;
         while (summa < 2470000) {
@@ -7,6 +8,7 @@ public class Main {
             h = h + 1;
             summa = summa + 15000;
         }
+        System.out.println("Задача №2");
         int k = 1;
         int l = 10;
         while (k < 11) {
@@ -18,6 +20,7 @@ public class Main {
             System.out.print(l + " ");
         }
         System.out.println();
+        System.out.println("Задача №3");
         int all = 12000000;
         int jo = (17 - 8) * (12000000 / 1000);
         int ye = 0;
@@ -26,6 +29,7 @@ public class Main {
             all = all + jo;
             System.out.println("Год " + ye + ", численность населения состовляет " + all);
         }
+        System.out.println("Задача №4");
         int cash = 15000;
         int mo = 0;
         while (cash < 12124800) {
@@ -33,6 +37,7 @@ public class Main {
             cash = cash + (cash / 100) * 7;
             System.out.println("Месяц № " + mo + ", сумма накоплений " + cash + ".");
         }
+        System.out.println("Задача №5");
         int cash1 = 15000;
         int mo1 = 0;
         while (cash1 < 12124800) {
@@ -42,6 +47,7 @@ public class Main {
                 System.out.println("Месяц № " + mo1 + ", сумма накоплений " + cash1 + ".");
             }
         }
+        System.out.println("Задача №6");
         int cash2 = 15000;
         int mo2 = 0;
         while (mo2 < 109) {
@@ -51,11 +57,13 @@ public class Main {
                 System.out.println("Месяц№ " + mo2 + ", сумма накоплений равна " + cash2 + " рублей.");
             }
         }
+        System.out.println("Задача №7");
         int fri = 2;
         while (fri < 31) {
             System.out.println("Сегодня пятница, " + fri + "-е число. Необходимо подготовить отчет.");
             fri = fri + 7;
         }
+        System.out.println("Задача №8");
         int o = 0;
         int du = 2023 - 200;
         int po = 2023 + 100;
