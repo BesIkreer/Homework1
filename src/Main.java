@@ -1,53 +1,77 @@
-import javax.rmi.ssl.SslRMIClientSocketFactory;
 public class Main {
     public static void main(String[] args) {
-        for (int i = 1; i < 11; i ++) {
-            System.out.println(i);
+        System.out.println("Задача №1");
+        int summa = 0;
+        int h = 0;
+        while (summa < 2470000) {
+            System.out.println("Месяц " + h + ", сумма накоплений равна " + summa + " рублей.");
+            h = h + 1;
+            summa = summa + 15000;
         }
-
-        for (int j = 10; j > 0; j = j - 1) {
-            System.out.println(j);
+        System.out.println("Задача №2");
+        int k = 1;
+        int l = 10;
+        while (k < 11) {
+            System.out.print(k + " ");
+            k = k + 1;
         }
-
-        for (int l = 2; l < 17; l = l + 2) {
-            System.out.println(l);
+        System.out.println();
+        for (; l > 0; l = l - 1) {
+            System.out.print(l + " ");
         }
-
-        for (int k = 10; k > -11; k = k - 1) {
-            System.out.println(k);
+        System.out.println();
+        System.out.println("Задача №3");
+        int all = 12000000;
+        int jo = (17 - 8) * (12000000 / 1000);
+        int ye = 0;
+        while (ye < 10) {
+            ye = ye + 1;
+            all = all + jo;
+            System.out.println("Год " + ye + ", численность населения состовляет " + all);
         }
-
-        for (int y = 1904; y < 2096; y = y + 4) {
-            System.out.println(y + " год является високосным");
+        System.out.println("Задача №4");
+        int cash = 15000;
+        int mo = 0;
+        while (cash < 12124800) {
+            mo = mo + 1;
+            cash = cash + (cash / 100) * 7;
+            System.out.println("Месяц № " + mo + ", сумма накоплений " + cash + ".");
         }
-
-        for (int s = 7; s < 99; s = s + 7) {
-            System.out.println(s);
+        System.out.println("Задача №5");
+        int cash1 = 15000;
+        int mo1 = 0;
+        while (cash1 < 12124800) {
+            mo1 = mo1 + 1;
+            cash1 = cash1 + (cash1 / 100) * 7;
+            if (mo1 % 6 == 0) {
+                System.out.println("Месяц № " + mo1 + ", сумма накоплений " + cash1 + ".");
+            }
         }
-
-        for (int p = 1; p < 513; p = p * 2) {
-            System.out.println(p);
+        System.out.println("Задача №6");
+        int cash2 = 15000;
+        int mo2 = 0;
+        while (mo2 < 109) {
+            mo2 = mo2 + 1;
+            cash2 = cash2 + (cash2 / 100) * 7;
+            if (mo2 % 6 == 0) {
+                System.out.println("Месяц№ " + mo2 + ", сумма накоплений равна " + cash2 + " рублей.");
+            }
         }
-
-        int money = 29000;
-        int total = 0;
-        for (int q = 1; q < 13; q ++) {
-            total = total + money;
-            System.out.println("Месяц " + q + ", сумма накоплений равна " + total + " рублей.");
+        System.out.println("Задача №7");
+        int fri = 2;
+        while (fri < 31) {
+            System.out.println("Сегодня пятница, " + fri + "-е число. Необходимо подготовить отчет.");
+            fri = fri + 7;
         }
-
-        int money1 = 29000;
-        int total1 = 0;
-        for (int a = 1; a < 13; a ++) {
-            total1 = total1 + total1/100;
-            total1 = total1 + money1;
-            System.out.println("Месяц " + a + ", сумма накоплений равна " + total1 + " рублей.");
-        }
-
-        int nob = 0;
-        for (int h = 1; h < 11; h++) {
-            nob = nob + 2;
-            System.out.println("2*" + h + "=" + nob);
+        System.out.println("Задача №8");
+        int o = 0;
+        int du = 2023 - 200;
+        int po = 2023 + 100;
+        while (o < po) {
+            o = o + 79;
+            if (o > du && o < po) {
+                System.out.println(o);
+            }
         }
     }
 }
