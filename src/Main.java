@@ -1,84 +1,63 @@
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Task 1, 2");
-        int[] firstMass = new int[]{1, 2, 3};
-        for (int i = 0; i < firstMass.length; i++) {
-            if (i != firstMass.length - 1) {
-                System.out.print(firstMass[i] + ", ");
-            } else {
-                System.out.print(firstMass[i]);
+        task1();
+        task2();
+        task3();
+        task4();
+    }
+
+    public static int[] generateRandomArray() {
+        java.util.Random random = new java.util.Random();
+        int[] arr = new int[30];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = random.nextInt(100_000) + 100_000;
+        }
+        return arr;
+    }
+
+    public static void task1() {
+        System.out.println("Task 1");
+        int[] arr = generateRandomArray();
+        int allSumma = 0;
+        for (int i = 0; i < arr.length; i++) {
+            allSumma = allSumma + arr[i];
+        }
+        System.out.println("Сумма трат за месяц составила " + allSumma + " рублей.");
+    }
+
+    public static void task2() {
+        System.out.println("Task 2");
+        int[] arr = generateRandomArray();
+        int maxSumma = -1;
+        int minSumma = 200_001;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > maxSumma) {
+                maxSumma = arr[i];
             }
         }
-        System.out.println();
-
-        double[] secondMass = {1.57, 7.654, 9.986};
-        for (int i = 0; i < secondMass.length; i++) {
-            if (i != secondMass.length - 1) {
-                    System.out.print(secondMass[i] + ", ");
-            } else {
-                System.out.print(secondMass[i]);
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < minSumma) {
+                minSumma = arr[i];
             }
         }
-        System.out.println();
-
-        int[] thirdMass = new int[3];
-        thirdMass[0] = 412;
-        thirdMass[1] = 965;
-        thirdMass[2] = 12;
-        for (int i = 0; i < thirdMass.length; i++) {
-            if (i != thirdMass.length - 1) {
-                System.out.print(thirdMass[i] + ", ");
-            } else {
-                System.out.print(thirdMass[i]);
-            }
-        }
-            System.out.println();
-
+        System.out.println("Минимальная сумма трат за день составила " + minSumma + " рублей. Максимальная сумма трат за день составила " + maxSumma + " рублей.");
+    }
+    public static void task3() {
         System.out.println("Task 3");
-        int[] firstMass1 = new int[]{1, 2, 3};
-        for (int i = firstMass1.length - 1; i > -1 ;i = i - 1) {
-            if (i != 0) {
-                System.out.print(firstMass1[i] + ", ");
-            } else {
-                System.out.print(firstMass1[i]);
-            }
+        int[] arr = generateRandomArray();
+        int averageValue = 0;
+        float allSumma = 0;
+        for (int i = 0; i < arr.length; i++) {
+           allSumma = allSumma + arr[i];
         }
-        System.out.println();
-
-        double[] secondMass1 = {1.57, 7.654, 9.986};
-        for (int i = secondMass1.length - 1; i > -1; i = i - 1) {
-            if (i != 0) {
-                System.out.print(secondMass1[i] + ", ");
-            } else {
-                System.out.print(secondMass1[i]);
-            }
-        }
-        System.out.println();
-
-        int[] thirdMass1 = new int[3];
-        thirdMass1[0] = 412;
-        thirdMass1[1] = 965;
-        thirdMass1[2] = 12;
-        for (int j = thirdMass1.length - 1; j > -1; j = j - 1) {
-            if (j != 0) {
-                System.out.print(thirdMass1[j] + ", ");
-            } else {
-                System.out.print(thirdMass1[j]);
-            }
-        }
-        System.out.println();
-
+        allSumma = allSumma / arr.length;
+        System.out.println("Средняя сумма трат за месяц составила " + allSumma + " рублей.");
+    }
+    public static void task4() {
         System.out.println("Task 4");
-        int[] task4Mass = {1, 2, 3};
-        for (int i =0; i < task4Mass.length; i++) {
-            if (task4Mass[i] % 2 != 0) {
-                task4Mass[i] = task4Mass[i] + 1;
-            }
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i > -1; i = i - 1) {
+            System.out.print(reverseFullName[i]);
         }
-            System.out.print(Arrays.toString(task4Mass));
-
     }
 }
-
