@@ -1,78 +1,84 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Задача №1");
-        int summa = 0;
-        int h = 0;
-        while (summa < 2470000) {
-            System.out.println("Месяц " + h + ", сумма накоплений равна " + summa + " рублей.");
-            h = h + 1;
-            summa = summa + 15000;
-        }
-        System.out.println("Задача №2");
-        int k = 1;
-        int l = 10;
-        while (k < 11) {
-            System.out.print(k + " ");
-            k = k + 1;
+        System.out.println("Task 1, 2");
+        int[] firstMass = new int[]{1, 2, 3};
+        for (int i = 0; i < firstMass.length; i++) {
+            if (i != firstMass.length - 1) {
+                System.out.print(firstMass[i] + ", ");
+            } else {
+                System.out.print(firstMass[i]);
+            }
         }
         System.out.println();
-        for (; l > 0; l = l - 1) {
-            System.out.print(l + " ");
+
+        double[] secondMass = {1.57, 7.654, 9.986};
+        for (int i = 0; i < secondMass.length; i++) {
+            if (i != secondMass.length - 1) {
+                    System.out.print(secondMass[i] + ", ");
+            } else {
+                System.out.print(secondMass[i]);
+            }
         }
         System.out.println();
-        System.out.println("Задача №3");
-        int all = 12000000;
-        int jo = (17 - 8) * (12000000 / 1000);
-        int ye = 0;
-        while (ye < 10) {
-            ye = ye + 1;
-            all = all + jo;
-            System.out.println("Год " + ye + ", численность населения состовляет " + all);
-        }
-        System.out.println("Задача №4");
-        int cash = 15000;
-        int mo = 0;
-        while (cash < 12124800) {
-            mo = mo + 1;
-            cash = cash + (cash / 100) * 7;
-            System.out.println("Месяц № " + mo + ", сумма накоплений " + cash + ".");
-        }
-        System.out.println("Задача №5");
-        int cash1 = 15000;
-        int mo1 = 0;
-        while (cash1 < 12124800) {
-            mo1 = mo1 + 1;
-            cash1 = cash1 + (cash1 / 100) * 7;
-            if (mo1 % 6 == 0) {
-                System.out.println("Месяц № " + mo1 + ", сумма накоплений " + cash1 + ".");
+
+        int[] thirdMass = new int[3];
+        thirdMass[0] = 412;
+        thirdMass[1] = 965;
+        thirdMass[2] = 12;
+        for (int i = 0; i < thirdMass.length; i++) {
+            if (i != thirdMass.length - 1) {
+                System.out.print(thirdMass[i] + ", ");
+            } else {
+                System.out.print(thirdMass[i]);
             }
         }
-        System.out.println("Задача №6");
-        int cash2 = 15000;
-        int mo2 = 0;
-        while (mo2 < 109) {
-            mo2 = mo2 + 1;
-            cash2 = cash2 + (cash2 / 100) * 7;
-            if (mo2 % 6 == 0) {
-                System.out.println("Месяц№ " + mo2 + ", сумма накоплений равна " + cash2 + " рублей.");
+            System.out.println();
+
+        System.out.println("Task 3");
+        int[] firstMass1 = new int[]{1, 2, 3};
+        for (int i = firstMass1.length - 1; i > -1 ;i = i - 1) {
+            if (i != 0) {
+                System.out.print(firstMass1[i] + ", ");
+            } else {
+                System.out.print(firstMass1[i]);
             }
         }
-        System.out.println("Задача №7");
-        int fri = 2;
-        while (fri < 31) {
-            System.out.println("Сегодня пятница, " + fri + "-е число. Необходимо подготовить отчет.");
-            fri = fri + 7;
-        }
-        System.out.println("Задача №8");
-        int o = 0;
-        int du = 2023 - 200;
-        int po = 2023 + 100;
-        while (o < po) {
-            o = o + 79;
-            if (o > du && o < po) {
-                System.out.println(o);
+        System.out.println();
+
+        double[] secondMass1 = {1.57, 7.654, 9.986};
+        for (int i = secondMass1.length - 1; i > -1; i = i - 1) {
+            if (i != 0) {
+                System.out.print(secondMass1[i] + ", ");
+            } else {
+                System.out.print(secondMass1[i]);
             }
         }
+        System.out.println();
+
+        int[] thirdMass1 = new int[3];
+        thirdMass1[0] = 412;
+        thirdMass1[1] = 965;
+        thirdMass1[2] = 12;
+        for (int j = thirdMass1.length - 1; j > -1; j = j - 1) {
+            if (j != 0) {
+                System.out.print(thirdMass1[j] + ", ");
+            } else {
+                System.out.print(thirdMass1[j]);
+            }
+        }
+        System.out.println();
+
+        System.out.println("Task 4");
+        int[] task4Mass = {1, 2, 3};
+        for (int i =0; i < task4Mass.length; i++) {
+            if (task4Mass[i] % 2 != 0) {
+                task4Mass[i] = task4Mass[i] + 1;
+            }
+        }
+            System.out.print(Arrays.toString(task4Mass));
+
     }
 }
 
