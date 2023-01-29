@@ -27,7 +27,7 @@ public class Main {
         System.out.println("Task 3");
         String firstName = "Ivёn ";
         String middleName = "Ivanov ";
-        String lastName = "Ivanovich";
+        String lastName = "Ivanovёch";
         String fullName = middleName + firstName + lastName;
         fullName = fullName.replace("ё", "е");
         System.out.println("Ф.И.О. сотрудника - " + fullName);
