@@ -23,6 +23,25 @@ public class Author {
     public void setLandName(String landName) {
         this.landName = landName;
     }
+    @Override
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+        Author vovin = (Author) other;
+        return  false;
+    }
+
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(firstName);
+    }
+
+    @Override
+    public String toString() {
+        return "Имя автор - " + this.firstName + ", Фамилия автора - " + this.landName;
+    }
+
 }
 
 
