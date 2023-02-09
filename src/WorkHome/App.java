@@ -8,7 +8,8 @@ public class App {
         System.out.println("Автор книги - " + vovin.getFirstName() + " " + vovin.getLandName());
 
         Author petin = new Author("Aleg", "Petin");
-        petin.setFirstName("Oleg");
+        petin.setFirstName("Andrei");
+        petin.setLandName("Vovin");
         System.out.println("Автор книги - " + petin.getFirstName() + " " + petin.getLandName());
 
         Book povest = new Book("Zima", new Author(vovin.getFirstName(), vovin.getLandName()), 1982);
@@ -24,5 +25,7 @@ public class App {
         System.out.println("Год издания - " + scaz.getAge());
 
         System.out.println(povest.toString());
+        System.out.println(vovin.equals(petin));
+        System.out.println(povest.equals(scaz));
     }
 }

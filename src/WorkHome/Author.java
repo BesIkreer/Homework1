@@ -1,5 +1,7 @@
 package WorkHome;
 
+import java.util.Objects;
+
 public class Author {
  private    String firstName;
  private    String landName;
@@ -22,26 +24,27 @@ public class Author {
 
     public void setLandName(String landName) {
         this.landName = landName;
+
     }
+
     @Override
-    public boolean equals(Object other) {
-        if (this.getClass() != other.getClass()) {
-            return false;
-        }
-        Author vovin = (Author) other;
-        return  false;
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Author author = (Author) o;
+        return Objects.equals(firstName, author.firstName) && Objects.equals(landName, author.landName);
     }
 
     @Override
     public int hashCode() {
-        return java.util.Objects.hash(firstName);
+        return Objects.hash(firstName, landName);
     }
 
     @Override
     public String toString() {
-        return "Имя автор - " + this.firstName + ", Фамилия автора - " + this.landName;
+        return "Имя - " + firstName +
+                ", Фамилия - " + landName;
     }
-
 }
 
 
